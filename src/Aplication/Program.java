@@ -1,5 +1,7 @@
 package Aplication;
 
+import Model.Dao.DaoFactory;
+import Model.Dao.SellerDao;
 import Model.Entities.Department;
 import Model.Entities.Seller;
 import com.mysql.cj.protocol.a.LocalDateTimeValueEncoder;
@@ -14,6 +16,9 @@ public class Program {
         Seller seller = new Seller(21,"pedro","pedro@gmail.com", LocalDateTime.now(),300.0,d1);
         System.out.println(d1);
         System.out.println(seller);
+
+        SellerDao sellerDao = DaoFactory.creatSellerDao();
+
 
     }
 }
