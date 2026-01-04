@@ -25,6 +25,11 @@ public class Program2 {
         Department d2 = new Department(null, "Drinks");
         departmentDao.insert(d2);
 
+        System.out.println("\n====Teste 4 DeleteByID ====");
+        int id = 5;
+        departmentDao.deleteBuId(id);
+
+        
 
     }
 }
