@@ -1,7 +1,6 @@
 package Model.Entities;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
