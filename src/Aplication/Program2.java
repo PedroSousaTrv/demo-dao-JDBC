@@ -29,7 +29,11 @@ public class Program2 {
         int id = 5;
         departmentDao.deleteBuId(id);
 
-        
+        System.out.println("\n====Teste 5 UpdateById ====");
+        Department d3 = departmentDao.findById(8);
+        System.out.println(d3);
+        d3.setName("Pedro");
+        departmentDao.updateById(d3);
 
     }
 }
